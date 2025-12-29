@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Git - всему голова!</title>
-      <link rel="stylesheet" type="text/css" href="../css/style.css">
-      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
-      <link rel="shortcut icon" href="../img/fav.ico" type="image/x-icon">
-      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
-   <body>
-      <!--Card-->
-      <div class="card">
-         <p class="subtitle">Git</p>
-          <ul>
-            <li>ls - расшифровывается как "List files in the directory", что переводится как "перечислить все файлы в папке" или "вывести на экран список файлов в папке".</li>
-            <li>cd - расшифровывается как "Change directory", что переводится как "сменить папку" или "перейти в другую папку".</li>
-            <li>pwd - расшифровывается как "Present working directory", что переводится как "текущая рабочая директория". То есть команда pwd показывает, в какой сейчас папке мы находимся. </li>
-            <li>mkdir - расшифровывается как "Make directory", что переводится как "создать папку".</li>
-            <li>mv - расфшифровывается как"Move", что переводится как "переместить", "передвинуть". С помощью нее можно переместить, переименовать или удалить файл/</li>
-         </ul>
-      </div>
-      <!--footer-->
-      <footer class="animated fadeIn">
-         <p class="location" align="center">
-            <a href="mac.html">Вернуся на главную</a>
-         </p>
-         &copy; 202 4. SkyPro
-      </footer>
-   </body>
+
+<head>
+   <title>Git - всему голова!</title>
+   <link rel="stylesheet" type="text/css" href="../css/style.css">
+   <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+   <link rel="shortcut icon" href="../img/favicon-16x16.png" type="image/x-icon">
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+   <!--Card-->
+   <div class="card">
+      <p class="subtitle">Git</p>
+      <h3 id="rt-0"> Создание репозитория</h3>
+      <ul>
+         <li>git init - создать новый репозиторий</li>
+         <li>git clone url - скопировать существующий репозиторий</li>
+      </ul>
+      <h3 id="rt-1">Работа с файлами</h3>
+      <ul>
+         <li>git add <файл> - добавить файл в подготовку</li>
+         <li>git add . - добавить все файлы</li>
+         <li>git commit -m "текст" - сохранить изменения</li>
+         <li>git status - посмотреть статус файлов</li>
+      </ul>
+      <h3 id="rt-3">Ветки</h3>
+      <ul>
+         <li>git branch - показать ветки</li>
+         <li>git branch <имя> - создать ветку</li>
+         <li>git checkout <ветка> - переключиться на ветку</li>
+         <li>git checkout -b <имя> - создать и переключиться</li>
+         <li>git merge <ветка> - объединить ветки</li>
+      </ul>
+      <h3 id="rt-3">Работа с удаленным репозиторием</h3>
+      <ul>
+         <li>git push - отправить изменения на сервер</li>
+         <li>git pull - скачать изменения с сервера</li>
+         <li>git fetch - проверить обновления</li>
+      </ul>
+      <h3 id="rt-3">Отмена действий</h3>
+      <ul>
+         <li>git restore <файл> - отменить изменения</li>
+         <li>git restore --staged <файл> - убрать из подготовки</li>
+         <li>git reset --hard - откатить все до последнего коммита</li>
+      </ul>
+      <h3 id="rt-3">История</h3>
+      <ul>
+         <li>git log - посмотреть историю</li>
+         <li>git log --oneline - краткая история</li>
+         <li>git diff - посмотреть изменения</li>
+      </ul>
+      <h3 id="rt-3">Полезные команды</h3>
+      <ul>
+         <li>git stash - временно сохранить изменения</li>
+         <li>git stash pop - вернуть сохраненное</li>
+         <li>git remote -v - показать подключенные репозитории</li>
+         <li>git rm <файл> - удалить файл из Git</li>
+      </ul>
+   </div>
+   <!--footer-->
+   <footer class="animated fadeIn">
+      <p class="location" align="center">
+         <a href="../index.html">Вернуться на главную</a>
+      </p>
+      &copy; 2024. SkyPro
+   </footer>
+</body>
+
 </html>
